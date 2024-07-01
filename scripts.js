@@ -34,10 +34,10 @@ document.addEventListener('DOMContentLoaded', function () {
         var resultDiv = document.getElementById('tracking-result');
 
         // Define the specific tracking number
-        var specificTrackingNumber = '1234567890';
+        var specificTrackingNumber = 'T0262';
 
         if (trackingNumber === specificTrackingNumber) {
-            resultDiv.innerHTML = `Tracking number ${trackingNumber} status: In transit.`;
+            resultDiv.innerHTML = `Tracking number ${trackingNumber} status: Pakage received, awaiting shipment.`;
         } else {
             resultDiv.innerHTML = `Tracking number ${trackingNumber} not available.`;
         }

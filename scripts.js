@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', function () {
         if (trackingNumber === specificTrackingNumber) {
             resultDiv.innerHTML =    `  
             <div style="font-family: 'Courier New', Courier, monospace;">
-            Tracking number ${trackingNumber} 
+            Tracking number ${trackingNumber} <br>
             📦Shipment Update: Package Held <br>
             </div>`;
         } else {

@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', function () {
         var specificTrackingNumber = 'T0262';
 
         if (trackingNumber === specificTrackingNumber) {
-            resultDiv.innerHTML = `Tracking number ${trackingNumber} status: Pakage received, awaiting shipment.`;
+            resultDiv.innerHTML = `Tracking number ${trackingNumber} status: Package received, awaiting shipment.`;
         } else {
             resultDiv.innerHTML = `Tracking number ${trackingNumber} not available.`;
         }

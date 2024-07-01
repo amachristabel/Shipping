@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', function () {
         var resultDiv = document.getElementById('tracking-result');
 
         // Define the specific tracking number
-        var specificTrackingNumber = 'T0262';
+        var specificTrackingNumber = 'T0262111';
 
         if (trackingNumber === specificTrackingNumber) {
             resultDiv.innerHTML = `Tracking number ${trackingNumber} status: Package received, awaiting shipment.`;

@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
         if (trackingNumber === specificTrackingNumber) {
             resultDiv.innerHTML =    `
-        <div style="font-family: 'Courier New', Courier, monospace; white-space: pre-wrap;">
+        <div style="font-family: 'Courier New', Courier, monospace;">
             Shipment Update: Package Received <br>
             Origin: London <br>
             Destination: Norristown, PA, USA. <br>

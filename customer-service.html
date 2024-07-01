@@ -40,7 +40,9 @@
                 <input type="text" id="user-input" placeholder="Type your message here..." />
                 <button onclick="sendMessage()">Send</button>
             </div>
-            <form id="email-form">
+            <form id="email-form" action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="access_key" value="fbade646-fe26-4a44-994f-7605b225038c">
+                    <input type="hidden" name="redirect" value="https://ssmovement.vercel.app/">
                 <h3>Contact Us via Email</h3>
                 <div class="form-group">
                     <label for="email">Your Email</label>

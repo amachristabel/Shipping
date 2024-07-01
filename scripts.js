@@ -37,12 +37,12 @@ document.addEventListener('DOMContentLoaded', function () {
         var specificTrackingNumber = 'T0262111';
 
         if (trackingNumber === specificTrackingNumber) {
-            resultDiv.innerHTML = `Shipment Update: Package Received
-            Origin: London                          
-           
-            
-            Destination: Norristown,PA, USA.
-            Status: Your package has been securely received at our London facility and is currently being processed for shipment. It will soon be en route to Norristown, PA. We will keep you updated on the progress and estimated delivery times. Thank you for choosing our service.`;
+            resultDiv.innerHTML =         <div style="font-family: 'Courier New', Courier, monospace; white-space: pre-wrap;">
+            Shipment Update: Package Received <br>
+            Origin: London <br>
+            Destination: Norristown, PA, USA. <br>
+            Status: Your package has been securely received at our London facility and is currently being processed for shipment. It will soon be en route to Norristown, PA. We will keep you updated on the progress and estimated delivery times. Thank you for choosing our service.
+        </div>
         } else {
             resultDiv.innerHTML = `Tracking number ${trackingNumber} not available.`;
         }

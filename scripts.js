@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', function () {
         if (trackingNumber === specificTrackingNumber) {
             resultDiv.innerHTML =    `
         <div style="font-family: 'Courier New', Courier, monospace;">
-            Shipment Update: Package Received <br>
+            📦Shipment Update: Package Received <br>
             Origin: London <br>
             Destination: Norristown, PA, USA. <br>
             Status: Your package has been securely received at our London facility and is currently being processed for shipment. It will soon be en route to Norristown, PA. We will keep you updated on the progress and estimated delivery times. Thank you for choosing our service.

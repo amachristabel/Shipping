@@ -34,18 +34,29 @@ document.addEventListener('DOMContentLoaded', function () {
         var resultDiv = document.getElementById('tracking-result');
 
         // Define the specific tracking number
-        var specificTrackingNumber = 'T0262';
+        var trackingInfo = {
+            'T0262': '📦 Shipment Update: Package Held',
+            'DAVIDS151A2': '📦 Shipment Update: Package Held at John F. Kennedy International Airport (JFK), New York'
+};
+        var specificTrackingNumber = ['T0262', 'DAVIDS151A2'];
 
-        if (trackingNumber === specificTrackingNumber) {
-            resultDiv.innerHTML =    `  
+// Iterate through each tracking number
+trackingNumbers.forEach(trackingNumber => {
+    // Check if the tracking number exists in trackingInfo
+    if (trackingInfo.hasOwnProperty(trackingNumber)) {
+        // Construct HTML for displaying the tracking information
+        var trackingInfoHTML = `
             <div style="font-family: 'Courier New', Courier, monospace;">
-            Tracking number ${trackingNumber} <br>
-            📦Shipment Update: Package Held <br>
+                Tracking number ${trackingNumber} <br>
+                ${trackingInfo[trackingNumber]} <br>
             </div>`;
-        } else {
-            resultDiv.innerHTML = `Tracking number ${trackingNumber} not available.`;
-        }
-    });
+        // Append or display the tracking information
+        resultDiv.innerHTML += trackingInfoHTML;
+    } else {
+        // Display message if tracking number is not found
+        resultDiv.innerHTML += `Tracking number ${trackingNumber} not available.<br>`;
+    }
+});
 
     document.getElementById('ship-form').addEventListener('submit', function (event) {
         event.preventDefault();

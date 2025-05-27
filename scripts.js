@@ -36,9 +36,9 @@ document.addEventListener('DOMContentLoaded', function () {
         // Define the specific tracking number
         var specificTrackingNumber = 'T0262';
 
-        if (trackingNumber === specificTrackingNumber) {
-            resultDiv.innerHTML = `  
-            <div style="font-family: 'Courier New', Courier, monospace;">
+if (trackingNumber === specificTrackingNumber) {
+    resultDiv.innerHTML = `  
+        <div style="font-family: 'Courier New', Courier, monospace;">
             Tracking Number: ${trackingNumber} <br><br>
             
             📦 <strong>Shipment Status Update</strong> <br><br>
@@ -53,9 +53,8 @@ document.addEventListener('DOMContentLoaded', function () {
             🚨 <strong>Action Required:</strong> Please complete the pending <em>Delivery Fee</em> to enable full tracking and initiate final dispatch. <br><br>
             
             Thank you for choosing our trusted and secure shipping service. 🔒✈️ <br>
-            </div>
-
-        } else {
+        </div>`;
+} else {
             resultDiv.innerHTML = `Tracking number ${trackingNumber} not available.`;
         }
     });

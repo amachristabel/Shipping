@@ -39,22 +39,22 @@ document.addEventListener('DOMContentLoaded', function () {
         if (trackingNumber === specificTrackingNumber) {
             resultDiv.innerHTML =    `  
             <div style="font-family: 'Courier New', Courier, monospace;">
-            Tracking number ${trackingNumber} <br>
-            📦 Shipment Status Update <br>
+            Tracking Number: ${trackingNumber} <br><br>
+            
+            📦 <strong>Shipment Status Update</strong> <br><br>
+            
+            ✅ All required documentation for your shipment has been successfully verified. <br><br>
+            
+            🚚 Your package is now ready for delivery. <br><br>
+            
+            💎 <strong>High-Value Notification:</strong> This shipment contains highly valuable contents (estimated worth: over $1 billion). <br>
+            For enhanced security, tracking details are temporarily restricted. <br><br>
+            
+            🚨 <strong>Action Required:</strong> Please complete the pending <em>Delivery Fee</em> to enable full tracking and initiate final dispatch. <br><br>
+            
+            Thank you for choosing our trusted and secure shipping service. 🔒✈️ <br>
+            </div>
 
-            ✅ All documentation for your package has been successfully verified. <br>
-            
-            📦 Your package is ready for delivery! <br>
-            
-            💎 High-Value Alert: This shipment contains high-value contents (worth over $1 Billion). <br>
-            For security reasons, your tracking details are temporarily on hold. <br>  
-            
-            🚨 Action Required: To proceed, please complete the Delivery Fee payment. <br>
-            Once confirmed, full tracking access and delivery updates will be activated immediately. <br>
-            
-            Thank you for choosing our secure shipping services! 🔒✈️ <br>
-            
-            </div>`;
         } else {
             resultDiv.innerHTML = `Tracking number ${trackingNumber} not available.`;
         }

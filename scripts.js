@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', function () {
         var specificTrackingNumber = 'T0262';
 
         if (trackingNumber === specificTrackingNumber) {
-            resultDiv.innerHTML =    `  
+            resultDiv.innerHTML = `  
             <div style="font-family: 'Courier New', Courier, monospace;">
             Tracking Number: ${trackingNumber} <br><br>
             
